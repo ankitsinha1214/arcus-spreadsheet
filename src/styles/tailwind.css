@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+/* .empty-cell {
+    color: #bbb;
+    font-style: italic;
+  }
+  
+  .zero-value {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .price-cell {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .aor-normal {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .tabulator {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+  } */
+
+
+  /* prev code */
+
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+#market-data-table {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+.tabulator-header {
+    background-color: #f8f9fa;
+}
+.tabulator-col-title {
+    text-align: center;
+    font-weight: bold;
+}
+.price-cell {
+    text-align: right;
+    color: #28a745;
+}
+.zero-value {
+    color: #6c757d;
+}
+.aor-normal {
+    background-color: #e6f7e6;
+    color: #2e7d32;
+}
+.empty-cell {
+    color: #adb5bd;
+    font-style: italic;
+}
+.controls {
+    margin-bottom: 15px;
+}
+button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* remove scroll bar if not needed */
+    font-family: sans-serif;
+  }
+  
+  #root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn-group {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #market-data-table {
+    flex: 1;
+    overflow: auto;
+    /* padding: 10px; */
+  }
+  
+  .tabulator {
+    height: 100% !important; /* override default */
+    font-size: 13px;
+  }
+  
+  .empty-cell {
+    color: #999;
+  }
+  
+  .price-cell {
+    color: #007bff;
+  }
+  
+  .zero-value {
+    color: #ff0000;
+  }
+  
+  .aor-normal {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .tabulator-cell.tabulator-selected {
+    background-color: #cce5ff !important;
+  }
